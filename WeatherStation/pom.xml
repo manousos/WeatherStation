@@ -5,8 +5,8 @@
 
 	<groupId>gr.manousos.iot</groupId>
 	<artifactId>WeatherStation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0.0</version>
+	<packaging>war</packaging>
 
 	<name>WeatherStation</name>
 	<description>Demo project for Spring Boot</description>
@@ -26,6 +26,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>gr.manousos.iot.domain</groupId>
+			<artifactId>weather-station-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
@@ -33,16 +39,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- Tomcat/TC server -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Data base -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
@@ -56,4 +70,9 @@
 	</build>
 
 
+	<scm>
+		<url>scm:git:https://github.com/manousos/WeatherStation.git</url>
+		<developerConnection>scm:git:https://github.com/manousos/WeatherStation.git</developerConnection>
+		<connection>scm:git:https://github.com/manousos/WeatherStation.git</connection>
+	</scm>
 </project>
