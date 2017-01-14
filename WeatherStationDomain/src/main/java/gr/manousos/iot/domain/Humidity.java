@@ -11,8 +11,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity(name = "humidity")
 @Table(name = "Humidity")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Humidity extends AbstractEntity<Long> {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

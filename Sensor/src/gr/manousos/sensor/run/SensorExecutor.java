@@ -18,7 +18,9 @@ public class SensorExecutor {
 	 * <li>Last parameter is interval time (in seconds) between next
 	 * sample.Default is 0 sec</li>
 	 * </ul>
-	 * {@code ./ProgramName param1 param2 .. paramN #5 3}
+	 * {@code ./ProgramName param1 param2 .. paramN #5 3} The right part of #
+	 * symbol is sensors command. The left part of # symbol is interval and
+	 * samples number parameters
 	 * 
 	 * @param args,
 	 *            the executed command @throws IOException @throws

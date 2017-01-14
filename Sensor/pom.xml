@@ -12,14 +12,6 @@
 		<WeatherStation.version>0.0.1-SNAPSHOT</WeatherStation.version>
 	</properties>
 
-	<dependencies>
-<!-- 		<dependency> -->
-<!-- 			<groupId>gr.manousos.iot</groupId> -->
-<!-- 			<artifactId>WeatherStation</artifactId> -->
-<!-- 			<version>${WeatherStation.version}</version> -->
-<!-- 		</dependency> -->
-	</dependencies>
-
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 
