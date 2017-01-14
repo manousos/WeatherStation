@@ -7,6 +7,7 @@ Weather station it's a spring app that manage weather data
 
 Technologies, frameworks and tools 
 Java 8
+Spring core
 Spring boot
 Spring data jpa
 String data rest
